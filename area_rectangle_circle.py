@@ -3,25 +3,19 @@ circle_area_list = []
 rectangle_perimeter_list = []
 rectangle_area_list = []
 
-
-
 def circle_perimeter(r):
     pi = 3.14
     return 2 * pi * r
-
 
 def circle_area(r):
     pi = 3.14
     return pi * r * r
 
-
 def rectangle_perimeter(length, width):
     return 2 * (length + width)
 
-
 def rectangle_area(length, width):
     return length * width
-
 
 while True:
     print("please enter what kind of performance do you want?")
@@ -100,7 +94,7 @@ while True:
                 print("=" * 50)
                 remove = input("please enter which item do you want to remove:")
                 for remove in rectangle_perimeter_list:
-                    rectangle_area_list.remove(remove)
+                    rectangle_perimeter_list.remove(remove)
             else:
                 print("current list is empty!!!")
         elif choose == 4:
@@ -115,3 +109,4 @@ while True:
     elif choose==7:
         print("good bye!!!")
         break
+
